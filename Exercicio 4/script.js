@@ -1,8 +1,8 @@
 let inputNum1 = document.querySelector("#inputNum1");
 let inputNum2 = document.querySelector("#inputNum2");
 let inputNum3 = document.querySelector("#inputNum3");
-let h3Resultado = document.querySelector("#h3Resultado")
-let btCalcular = document.querySelector("#btCalcular")
+let h3Resultado = document.querySelector("#h3Resultado");
+let btCalcular = document.querySelector("#btCalcular");
 
 function CalcularMedias(){
     let vlr1 = Number(inputNum1.value);
@@ -18,12 +18,12 @@ function CalcularMedias(){
     let mediaMedias = somaMedias / 2;
 
     h3Resultado.innerHTML = "Media Aritmetica:" +mediaAritmetica+"</br>"+
-                            "Media Penderada:" +mediaPonderada+"</br"+
-                            "Soma das Medias:" +somaMedias"</br"+
-                            "Media das Medias:" +mediaMedias"</br"+
+                            "Media Penderada:" +mediaPonderada+"</br>"+
+                            "Soma das Medias:" +somaMedias +"</br>"+
+                            "Media das Medias:" +mediaMedias +"</br>"
  
 }
 
-btCalcular = function (){
+btCalcular.onclick = function (){
     CalcularMedias();
 }
